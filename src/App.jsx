@@ -21,7 +21,7 @@ function App() {
                 </a>
             </div>
             <p className="read-the-docs">
-                Contáctenos por Whatsapp para reservar tu turno o hacer consultas.
+                Comunícate con nosotros por WhatsApp para reservar tu turno o realizar consultas.
             </p>
             <div className="card">
                 <button onClick={handleClickCentro} className="button">
