@@ -15,4 +15,4 @@ Para configurar el proyecto en tu máquina local, sigue estos pasos:
 
    Si aún no has clonado el repositorio, puedes hacerlo con el siguiente comando:
    ```bash
-   git clone https://github.com/tuusuario/punto-quiropractico.git
+   git clone git@github.com:santiagocorbanini/linktree.git
