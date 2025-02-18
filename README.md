@@ -1,9 +1,18 @@
-# React + Vite
+# Punto Quiropráctico - React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación simple construida con **React** y **Vite**. Es parte del sitio web de Punto Quiropráctico, que tiene botones para redirigir a los usuarios a WhatsApp según la sede que elijan.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# linktree
+- **Redirección a WhatsApp**: Los usuarios pueden hacer clic en los botones para contactar directamente con la sede correspondiente a través de WhatsApp.
+- **Imagen de logo**: Se incluye el logo de Punto Quiropráctico que redirige a la página principal del sitio web.
+
+## Instalación
+
+Para configurar el proyecto en tu máquina local, sigue estos pasos:
+
+1. **Clonar el repositorio**
+
+   Si aún no has clonado el repositorio, puedes hacerlo con el siguiente comando:
+   ```bash
+   git clone https://github.com/tuusuario/punto-quiropractico.git
