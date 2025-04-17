@@ -5,6 +5,7 @@ import foto3 from './assets/foto3.jpg';
 import foto4 from './assets/foto4.jpg';
 import './App.css';
 import { useRef, useState } from 'react';
+import { FaWhatsapp } from 'react-icons/fa'; // Necesitarás instalar react-icons
 
 function App() {
 
@@ -126,6 +127,10 @@ function App() {
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Ubicación Punto Quiropráctico Juramento"
                 ></iframe>
+            </div>
+
+            <div className="whatsapp-float" onClick={handleClickCentro}>
+                <FaWhatsapp className="whatsapp-icon" />
             </div>
         </>
     )
