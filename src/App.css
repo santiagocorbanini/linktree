@@ -1,36 +1,39 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #005DAB);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
 
 .card {
@@ -38,7 +41,12 @@
 }
 
 .read-the-docs {
-  color: #fff;
+    color: #fff;
+}
+
+.subtitle {
+    color: #fff;
+    margin-bottom: 1px;
 }
 
 .button {
@@ -47,20 +55,194 @@
     font-size: 16px;
     cursor: pointer;
     color: #005DAB;
-    width: 80%; /* Establece el ancho del 80% */
-    margin: 10px auto; /* Centra los botones y agrega margen superior e inferior */
+    width: 80%;
+    /* Establece el ancho del 80% */
+    margin: 10px auto;
+    /* Centra los botones y agrega margen superior e inferior */
 }
 
 .logo {
-    max-width: 60%; /* La imagen no se estirará más allá del ancho de su contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 60%;
+    /* La imagen no se estirará más allá del ancho de su contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
     padding: 1.5em;
     will-change: filter;
     transition: filter 300ms;
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .logo {
-      max-width: 80%; /* Puedes reducir el tamaño en pantallas más pequeñas si lo deseas */
+        max-width: 80%;
+        /* Puedes reducir el tamaño en pantallas más pequeñas si lo deseas */
     }
-  }
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.slide-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-arrow.left {
+    left: 10px;
+}
+
+.slider-arrow.right {
+    right: 10px;
+}
+
+/* Indicadores de posición (opcional) */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background: #005DAB;
+}
+
+.gallery-container {
+    width: 100vw;
+    /* Ocupa el ancho completo del viewport */
+    margin-left: calc(-50vw + 50%);
+    /* Truco para centrar el overflow */
+    overflow-x: auto;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+    background: transparent;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    padding: 0 calc(50vw - 50%);
+    /* Compensa el margen del contenedor */
+    width: max-content;
+}
+
+.gallery-image {
+    width: 280px;
+    /* Puedes ajustar este valor */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .gallery-image {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+.app-container {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    /* Esto evita que toda la página haga scroll horizontal */
+}
+
+.read-the-docs,
+.card {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 15px;
+    /* Asegura que el contenido no se pegue a los bordes */
+    box-sizing: border-box;
+}
+
+.map-container {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        border-radius: 8px;
+        margin: 10px 0 20px;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
