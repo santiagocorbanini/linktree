@@ -6,7 +6,7 @@ import foto4 from './assets/foto4.jpg';
 import './App.css';
 import { useRef, useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa'; // Necesitarás instalar react-icons
-import Opiniones from './opiniones';
+import Opiniones from './assets/components/Opiniones';
 
 function App() {
 

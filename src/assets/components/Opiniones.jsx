@@ -1,9 +1,9 @@
 // components/Opiniones.jsx
 import './Opiniones.css';
 import { useState } from 'react';
-import foto1 from './assets/opiniones/prueba.jpeg';
+import foto1 from './../comentarios/prueba.jpeg';
 
-const Opiniones = [
+const opiniones = [
     {
         nombre: "Juan Pérez",
         foto: foto1,
