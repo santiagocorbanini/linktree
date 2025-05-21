@@ -3,7 +3,7 @@ import './Opiniones.css';
 import { useState } from 'react';
 import foto1 from './assets/opiniones/prueba.jpeg';
 
-const opiniones = [
+const Opiniones = [
     {
         nombre: "Juan Pérez",
         foto: foto1,
