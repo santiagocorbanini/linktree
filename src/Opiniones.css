@@ -1,7 +1,5 @@
 .opiniones-container {
     text-align: center;
-    margin: 40px 0;
-    padding: 20px;
 }
 
 .opinion-card {
@@ -43,4 +41,9 @@
 .espacio-comentario {
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+.titulo-comentario {
+    color: #fff;
+    margin-bottom: 10px;
 }

@@ -27,7 +27,7 @@ export default function Opiniones() {
 
     return (
         <div className="opiniones-container">
-            <h2>Lo que dicen nuestros pacientes</h2>
+            <p className="titulo-comentario">Lo que dicen nuestros pacientes</p>
             <div className="opinion-card">
                 <img src={opiniones[index].foto} alt={opiniones[index].nombre} className="avatar" />
                 <h3 class="espacio-comentario">{opiniones[index].nombre}</h3>
