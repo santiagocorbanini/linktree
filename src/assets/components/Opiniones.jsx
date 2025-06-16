@@ -6,6 +6,7 @@ import foto2 from './../comentarios/2.png';
 import foto3 from './../comentarios/3.png';
 import foto4 from './../comentarios/4.png';
 import foto5 from './../comentarios/5.png';
+import foto5 from './../comentarios/6.png';
 
 const opiniones = [
     {
@@ -37,6 +38,20 @@ const opiniones = [
         foto: foto5,
         estrellas: 5,
         comentario: "Me atiendo desde hace 3 meses con César. Acudo a cada sesión con total confianza y siento realmente que mi tratamiento es el adecuado. Hoy llevé a mi hermana a su primer sesión y la amorosidad y paciencia con que la atendió me conmovieron mucho y admiré más aún su profesionalismo. Tan agradecida, César!!!"
+    },
+    {
+        nombre: "Scott Winslow",
+        foto: foto6,
+        estrellas: 5,
+        comentario: `Soy de los Estados Unidos y he sido presidente de un hospital por más de 50 años. Tengo una amplia experiencia con todos los niveles de médicos y fui el primero en permitir quiroprácticos en el personal médico de un hospital en el estado de Illinois.
+
+        He conocido a muchos quiroprácticos. He usado servicios quiroprácticos muchas veces en mi vida.
+        
+        César Solis es un excelente practicante en mi opinión. Está bien entrenado y es muy fácil de hablar. Su eficiente evaluación y tratamiento me dio alivio instantáneo.
+        
+        Cosas que me contó sobre la estructura de mi cuerpo me han contado antes por quiroprácticos que conocía y confiaba en el EUU. Esto demuestra su excelente conocimiento y entrenamiento.
+        
+        Recomiendo a Cesar Solis altamente.`
     }
 ];
 
