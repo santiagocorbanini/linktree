@@ -88,6 +88,7 @@ function App() {
 
                 <button className="slider-arrow right" onClick={nextSlide}>&gt;</button>
             </div>
+            {/* Galeria de fotos
             <div className="gallery-container">
                 <div className="image-gallery" ref={galleryRef}>
                     <img src={foto1} alt="Espacio 1" className="gallery-image" />
@@ -96,6 +97,7 @@ function App() {
                     <img src={foto4} alt="Espacio 4" className="gallery-image" />
                 </div>
             </div>
+*/}
             <p className="read-the-docs">
                 Estamos ubicados en:
             </p>

@@ -1,22 +1,43 @@
 // components/Opiniones.jsx
 import './Opiniones.css';
 import { useState } from 'react';
-import foto1 from './../comentarios/prueba.jpeg';
+import foto1 from './../comentarios/1.png';
+import foto2 from './../comentarios/2.png';
+import foto3 from './../comentarios/3.png';
+import foto4 from './../comentarios/4.png';
+import foto5 from './../comentarios/5.png';
 
 const opiniones = [
     {
-        nombre: "Juan Pérez",
+        nombre: "Mariano Castro",
         foto: foto1,
         estrellas: 5,
-        comentario: "Excelente atención. Me ayudaron muchísimo con mi dolor de espalda."
+        comentario: "Excelente lugar con excelentes profesionales. Siempre bien predispuestos en caso de algún inconveniente. En mi caso tuve que reprogramar varias fechas de mis sesiones y nunca tuvieron problemas! 100% recomendable!"
     },
     {
-        nombre: "María Gómez",
-        foto: foto1,
-        estrellas: 4,
-        comentario: "Muy buena experiencia. El lugar impecable y la atención personalizada."
+        nombre: "Mailen Haddad",
+        foto: foto2,
+        estrellas: 5,
+        comentario: "La atencion de todo el equipo es excelente!! Me atiendo con Facu y es super atento, profesional y se nota que ama lo que hace! Estoy hace un mes y algo haciendome este tratamiento y se me fueron los mareos, vertigo, dolor de lumbar y cervical. Feliz de haber encontrado este lugar! Recomendado!!!"
     },
-    // Agregá 3 más...
+    {
+        nombre: "Micaela Mondino",
+        foto: foto3,
+        estrellas: 5,
+        comentario: "Los chicos de Punto Quiropráctico se destacan por su amabilidad y ser excelentes profesionales. Puntualmente César, quien es mi quiropráctico hace años y me ayudó muchísimo con mis problemas de espalda: primero a identificarlos mediante estudios y luego con un plan de acción específico para abordar los mismos. Los recomiendo siempre!"
+    },
+    {
+        nombre: "James n",
+        foto: foto4,
+        estrellas: 5,
+        comentario: "He tenido quiropráctica en 20 países y la técnica de César realmente me impresionó. Los ajustes de su cuello fueron increíblemente precisos, uno de los mejores que he tenido. Tenía un dolor lumbar grave debido a una lesión en Argentina y sus ajustes precisos y precisos me brindaron un alivio casi inmediato. Gracias a su trabajo ya no necesito tomar analgésicos. ¡Lo recomiendo mucho!"
+    },
+    {
+        nombre: "Azulejito",
+        foto: foto5,
+        estrellas: 5,
+        comentario: "Me atiendo desde hace 3 meses con César. Acudo a cada sesión con total confianza y siento realmente que mi tratamiento es el adecuado. Hoy llevé a mi hermana a su primer sesión y la amorosidad y paciencia con que la atendió me conmovieron mucho y admiré más aún su profesionalismo. Tan agradecida, César!!!"
+    }
 ];
 
 export default function Opiniones() {
