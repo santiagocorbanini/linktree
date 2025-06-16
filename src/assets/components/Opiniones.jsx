@@ -6,7 +6,7 @@ import foto2 from './../comentarios/2.png';
 import foto3 from './../comentarios/3.png';
 import foto4 from './../comentarios/4.png';
 import foto5 from './../comentarios/5.png';
-import foto5 from './../comentarios/6.png';
+import foto6 from './../comentarios/6.png';
 
 const opiniones = [
     {
